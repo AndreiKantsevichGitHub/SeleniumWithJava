@@ -1,0 +1,168 @@
+1) How to Launch Browsers in WebDriver?
+2) How to Open URL?
+3) How to capture Title of the page?
+-----
+4) How to Check WebElement is Displayed, Enabled and Selected?
+5) What are the Conditional Methods in Selenium WebDriver?
+-----
+6) How to Navigate Back & Forward?
+7) How to Refresh Page?
+8) What is the difference between get() & navigate.to()?
+-----
+9) What is the difference between findElement() and findElements() in Selenium WebDriver?
+-----
+10) How To Provide & Clear text from Input Box?
+11) How to capture Text from Input Box?
+12) What is the difference between getText() and  getAttribute('value’)?
+-----
+13) How to handle Dropdown in Selenium WebDriver?
+14) What is the use of Select class?
+15) How To handle Multiple Dropdowns in a page using Generic Method?
+16) How to Handle Bootstrap DropDown in Selenium WebDriver?
+17) How to handle JQuery Dropdown in Selenium WebDriver?
+18) How to Check Drop Down Options are Sorted?
+19) How to Handle Auto Suggest DropDown in Selenium WebDriver?
+   a. Google Search
+   b. Bing Search
+20) How to Handle Autocomplete Google Places DropDown?
+-----
+21) How To Select specific Checkbox?
+22) How to select all the checkboxes?
+23) How to select multiple check boxes by choice?
+24) How to select last N check boxes?
+25) How to select first N check boxes?
+-----
+26) How To Handle Browser Windows in Selenium WebDriver?
+27) What is the Difference between getWindowHandle() & getWindowHandles() methods?
+28) How To Switch between Multiple Browser Windows?
+29) What is the difference between close() and quite() methods?
+30) How to close All browser Windows?
+31) How To close Specific Browser Window by choice?
+-----
+32) How To Locate links in Selenium WebDriver?
+33) What is the difference between LinkText() and PartialLinkText()?
+34) How to capture all the links from Web Page?
+35) What is Broken Link? How to check it?
+-----
+36) What is JavaScript Alert?
+37) How To Handle JavaScript Alerts?
+38) How To Handle Authentication Popup?
+39) How To Handle Permission Pop-ups?
+-----
+40) What is the difference between frame and iframe?
+41) How To Handle iframes in Selenium WebDriver?
+42) How To Switch between multiple iFrames?
+43) How To Work with Inner iFrames?
+-----
+44) What is Synchronization problem in Automation?
+45) What are the different types of waits available in Selenium WebDriver?
+-----
+46) How To Handle Web Table in Selenium WebDriver?
+    1) How many row in table
+    2) How many columns in a table
+    3) Retrieve the specific row/column data
+    4) Retrieve all the data from the table
+    5) Print Release Date, Version№ of Java Language of Selenium
+47) How To Handle Dynamic Web Table with Pagination in Selenium?
+-----
+48) How To Handle Date Pickers?
+49) 48) How To Handle Date Pickers DropDown?
+-----
+50) How To Perform Mouse Operations in Selenium WebDriver?
+51) How to Perform Right click Action?
+52) How to Perform Double click Action?
+53) How to Perform Drag and Drop Action?
+54) How to Perform Mouse Hover Action?
+-----
+55) How To Handle Slider?
+56) How To Find Location & Size of the Web Element?
+57) What is the Difference Between Actions & Action?
+58) What is the Difference Between build() & perform()?
+-----
+59) How To Handle Keyboard Actions in Selenium WebDriver?
+-----
+60) How to capture Screenshot of Full Page?
+61) How to capture Screenshot of Section of  a Web Page?
+62) How to capture Screenshot of an Element on a  Web Page?
+-----
+63) How to capture tooltip of the Web Element?
+64) How to open a link in new tab?
+65) How to open URL’s in a multiple tabs & Windows?
+66) How to capture Size & Location of the WebElement?
+-----
+67) How To use JavaScriptExecutor in Selenium WebDriver?
+    1) Flashing Element
+    2) Drawing border & take screenshot of the Element
+    3) Get the title of the page
+    4) Click action
+    5) Generate alert
+    6) Refreshing the page
+    7) Scrolling down page
+    8) Scroll up page
+    9) Zoom-In Zoom-Out page
+-----
+68) Handling Cookies in Selenium WebDriver
+    1) How To capture cookies from browser?
+    2) How To print cookies from browser?
+    3) How To add Cookie to the browser?
+    4) How To delete specific Cookie from the browser?
+    5) How To delete all Cookies from the browser?
+-----
+69) How to download the files using the selenium WebDriver?
+-Chrome
+-Edge
+-Firefox
+-----
+70) How to download the files into the custom directory ?
+71) How to change the download file location using selenium WebDriver?
+72) How to download the embedded PDF file ?
+73) How to download the PDF file using selenium WebDriver?
+74) What is Browser Profile in Firefox?
+75) What is Mime Type?
+-----
+76) How to upload the file in selenium WebDriver?
+-sendKeys()
+-Robot Class
+-----
+77) 15 Common selenium exceptions:
+-What are the different Selenium exception?
+-What is NoSuchElementException and what are its root causes?
+-What is NoSuchWindowException and what are its root causes?
+-What is NoSuchFrameException and what are its root causes?
+-What is NoAlertPresentException and what are its root causes?
+-What is ElementNotSelectableException and what are its root causes?
+-What is ElementNotVisibleException and what are its root causes?
+-What is ElementNotSelectableException and what are its root causes?
+-What is InvalidSelectorException and what are its root causes?
+-What is TimeoutException and what are its root causes?
+-What is WebDriverException  and what are its root causes?
+-What is StaleElementReferenceException and what are its root causes?
+-What is ScreenshotException and what are its root causes?
+-What is ScriptTimeoutException  and what are its root causes?
+-What is InsecureCertificateException and what are its root causes?
+-What is UnableToSetCookieException and what are its root causes?
+
+
+
+
+/*
+    --- Methods of handling authentication window in selenium webdriver ---
+
+  We can handle basic authentication in 4 ways:
+
+ 1. Passing username and password along with the url
+  driver.get(“http://UserName:Password@ankpro.com”)
+ 2. alert.setAuthenticationCredentials method.
+  driver.switchTo().alert().setAuthenticationCredentials(“username”, ” password”)
+ 3. Using SendKeys
+  alert.sendKeys( "username" + Keys.Tab + "password" + Keys.Tab); alert.accept();
+ 4. We can use the third party automation tools like AutoIt or Sikuli for sending
+ the keys to this window.
+
+  The approach to handle authentication window popup may be different in each browser,
+try any one of mentioned method.
+  In case your authentication server requires username with domain like "domainuser"
+you need to add double slash  to the url:
+ domain_nameuser:password@example.com
+  If your username or password is having @ symbol then replace it with %40
+*/
