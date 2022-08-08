@@ -1,0 +1,109 @@
+1. NoSuchElementException
+WebDriver is not able to find the existence of web element on the web page.
+Here, the FindElementBy method is unable to find the web element.
+
+Root Cause:
+Elements are removed from the DOM
+Xpath you specified for the element may be wrong
+AJAX has not returned yet and you've already obtain NoSuchElementException
+Page is still being rendered but you've already finished your element search because of
+low wait time
+The element is not on the page at all
+
+2. NoSuchWindowException
+Selenium WebDriver is unable to switch to the window.
+
+Root Cause:
+Current window closed
+Target window is not opened yet, but you were trying to perform operation
+When target window has been closed but still the code tried to perform operation on the target window.
+
+3. NoSuchFrameException
+WebDriver is unable to switch to the given frame.
+
+Root Cause:Invalid name of the frame
+Switchable frame does not exist
+We have not given enough wait time to load the frame
+
+4. NoAlertPresentException
+Selenium WebDriver is unable to switch to the alert.
+Here Alert popup could be Alert Box, Confirmation Box, Prompt Box from the Javascript commands.
+
+Root Cause:
+When user tries to access alert which is not present in the at current time
+When javascript alert is blocked in the browser
+Not giving enough time for the alert to load
+When alert is already closed
+
+5. ElementNotSelectableException
+WebDriver is not able to select or click the web element on Application under test (AUT).
+
+Root Cause:
+The attribute of the web element is set to disable
+
+6. ElementNotVisibleException
+This type of Exception occurs when existing element in DOM has an attribute set as hidden.
+In this case, elements are there, but they are not visible or available to interact with the WebDriver.
+
+Root Cause:
+HTML element’s attribute set to ‘hidden’
+Trying to use 'sendKeys' to element which is not visible
+
+7. ElementNotSelectableException
+This exception is thrown when an element is present in the DOM but not able to select.
+
+Root Cause:
+Element may be overlapped by another element.
+
+8. InvalidSelectorException
+When you write wrong XPath syntax then this exception may occur.
+
+Root Cause:
+XPath syntax is not correct
+
+9. TimeoutException
+This exception occurs when we use wait commands like Implicit Wait, Explicit Wait or Fluent Wait.
+Once any of the waits fails after exceeding defined time then TimeoutException occurs.
+
+Root Cause:
+WebDriver fails to perform an activity in defined time within Implicit Wait or Explicit Wait
+
+10. WebDriverException
+This exception occurs when the WebDriver is performing the action right after you close the browser.
+
+Root Cause:
+WebDriver trying to execute a statement after the browser is closed.
+
+11. StaleElementReferenceException
+This exception occurs when the web element gets detached from the current DOM.
+
+Root Cause:
+JavaScript or JS library has deleted an element and replaced it with one with the same ID or attributes.
+
+12. ScreenshotException
+This will be thrown when selenium fails to take screenshot of the webpage.
+If ScreenshotException occurs then the screenshot captured turns black
+
+Root Cause:
+When we try to take screenshot in headless browser(phantom js, htmlunitdriver) without enabling
+the screenshot functionality
+
+13. ScriptTimeoutException
+Webdriver throws ScriptTimeoutException exception when executeAsyncScript takes more time
+than given time limit to return the value.
+
+Root Cause:
+Webpage running a long running script
+
+14. InsecureCertificateException
+Navigation made the user agent to hit a certificate warning, which is caused by an invalid
+or expired TLS certificate.
+
+Root Cause:
+Website is does not has valid certificate
+
+15. UnableToSetCookieException
+This exception is thrown when a driver fails to set a cookie.
+
+Root Cause:
+You are trying to set the cookie without specifying the domain
